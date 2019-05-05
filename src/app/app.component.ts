@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pforpad';
+  contriStatus: string = "You have not contributed yet!"
+  contributed = false;
+
+  onContri() {
+    this.contributed = true;
+    this.contriStatus = "Thanks for your contribution!"
+  }
 }
