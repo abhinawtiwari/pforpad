@@ -8,8 +8,8 @@ import { Donor } from '../donor.model';
 })
 export class DonorsListComponent implements OnInit {
   donors: Donor[] = [
-    new Donor('Dummy', 'dummy@mail.com', '7777700000'),
-    new Donor('Dummy2', 'dummy2@mail.com', '7777700002'),
+    new Donor('Nitesh Kuhar', 'dummy@mail.com', '7777700000'),
+    new Donor('Dipanjan Das', 'dummy2@mail.com', '7777700002'),
     
   ];
   

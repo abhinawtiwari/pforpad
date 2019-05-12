@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row" style="padding: 50px">
+    <div class="col-xs-5">
+      <img width="450" style="padding: 27px" alt="Angular Logo" src="src/app/bb.jpg" class="img-responsive">
+      <!-- https://www.pexels.com/photo/pink-menstrual-cup-in-box-1560288/ -->
+    </div>      
+    <div class="col-xs-7">
+        <h3>43% of Indian women don't have access to sanitary pads.</h3>
+        <p>I know you are sorry for them. But let's not just be sorry.</p>
+        <p>I'll distribute sanitary pads to the needy through your contributions. 
+          Let's contribute towards a better India.</p>
+        <p>Enter below the number of pads you want to contribute.</p>
+        <div class="row">
+          <div class="col-xs-12">
+            <form>
+              <div class="row">
+                <div class="col-sm-4 form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" class="form-control">
+                </div>
+                <div class="col-sm-3 form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" class="form-control">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-4 form-group">
+                      <label for="email">Email</label>
+                      <input type="text" id="email" class="form-control">
+                  </div>
+                  <div class="col-sm-3 form-group">
+                      <label for="count">Count</label>
+                      <input type="number" id="count" class="form-control">
+                    </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <button class="btn btn-success" type="submit" (click)="onContri()">Contribute</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <br>
+        <br><br>
+        <p *ngIf="contributed" class="contri">{{ contriStatus }}</p>
+    </div>
+  </div>  
+</div>
