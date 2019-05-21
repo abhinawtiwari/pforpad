@@ -1,4 +1,3 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <app-header (featureSelected)="onNavigate($event)"></app-header>
 <app-donors-list *ngIf="loadedFeature !== 'contribute'"></app-donors-list>
 <app-contribute *ngIf="loadedFeature === 'contribute'"></app-contribute>

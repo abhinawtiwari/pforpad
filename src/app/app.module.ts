@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DonorsListComponent } from './donors-list/donors-list.component';
 import { ContributeComponent } from './contribute/contribute.component';
+import { HighlightDirective } from './hightlight/highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DonorsListComponent,
-    ContributeComponent
+    ContributeComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule
